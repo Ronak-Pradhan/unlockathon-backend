@@ -93,7 +93,7 @@ Helper CSS
 }
 
 .spad {
-	padding-top: 105px;
+	padding-top: 0px;
 	padding-bottom: 105px;
 }
 
@@ -125,7 +125,7 @@ Commom elements
 	padding: 23px 20px;
 	border-radius: 50px;
 	text-transform: uppercase;
-	background: #fc0254;
+	background: #DF1F2D;
 	color: #fff;
 	line-height: normal;
 	cursor: pointer;
@@ -217,7 +217,7 @@ Header section
 
 .unlockLogo {
 	font-size: x-large;
-	color: #FC0254;
+	color: #DF1F2D;
 }
 
 .unlockLogoText{
@@ -253,7 +253,7 @@ Header section
 }
 
 .header-right .user-panel .register {
-	color: #fc0254;
+	color: #DF1F2D;
 	margin-right: 0;
 }
 
@@ -282,7 +282,7 @@ Header section
 }
 
 .main-menu li a:hover {
-	color: #fc0254;
+	color: #DF1F2D;
 }
 
 .main-menu li:first-child a {
@@ -325,7 +325,7 @@ Header section
 }
 
 .main-menu .sub-menu li a:hover {
-	color: #fc0254;
+	color: #DF1F2D;
 }
 
 .slicknav_menu {
@@ -363,7 +363,7 @@ Hero section
 }
 
 .hs-item h2 span {
-	color: #fc0254;
+	color: #DF1F2D;
 }
 
 .hs-item p {
@@ -451,7 +451,7 @@ Hero section
 }
 
 .hero-slider .owl-dots .owl-dot.active {
-	background: #fc0254;
+	background: #DF1F2D;
 }
 
 /* ----------------
@@ -542,7 +542,7 @@ Responsive
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		color: #fc0254;
+		color: #DF1F2D;
 		background: transparent;
 	}
 	.slicknav_btn {
@@ -611,7 +611,7 @@ Responsive
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		color: #fc0254;
+		color: #DF1F2D;
 		background: transparent;
 	}
 	.slicknav_btn {

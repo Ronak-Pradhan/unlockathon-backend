@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth import get_user_model
-
-
+from django.utils import timezone
+import datetime
+from pytz import timezone as tz
 from rest_framework.response import Response
 from rest_framework.decorators import api_view,permission_classes
 from rest_framework.permissions import IsAuthenticated
@@ -12,6 +13,10 @@ from .serializers import UserSerializer,QuestionSerializer
 
 
 from game.models import Question
+
+START_DATE = datetime.datetime(2022, 3, 3, 00,00,00,00,tzinfo=tz('Asia/Kolkata'))
+
+now = timezone.localtime()
 # Create your views here.
 
 def get_user(request):
@@ -28,6 +33,14 @@ def get_logged_in_user(request):
 @permission_classes([IsAuthenticated])
 def get_question(request):
     context={}
+    if now.date() < START_DATE.date():
+        context['status'] = 'not found'
+        context['question'] = None
+        context['message'] = f"The game begins on {START_DATE.date()}"
+
+        return Response(context)
+
+   
     try:
         question=Question.objects.get(question_number=get_user(request).current_question)
         context['status']='found'
@@ -36,8 +49,8 @@ def get_question(request):
     except:
         context['status']='not found'
         context['question']=None
-        context['message']="Congratutlations! You have completed all questions!"
-    
+        context['message']="Congratulations! You have completed all questions!"
+
     return Response(context)
 
 @api_view(['GET'])

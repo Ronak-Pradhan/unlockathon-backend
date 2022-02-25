@@ -93,7 +93,7 @@ Helper CSS
 }
 
 .spad {
-	padding-top: 105px;
+	padding-top: 0px;
 	padding-bottom: 105px;
 }
 
@@ -125,12 +125,28 @@ Commom elements
 	padding: 23px 20px;
 	border-radius: 50px;
 	text-transform: uppercase;
-	background: #fc0254;
+	background: #DF1F2D;
 	color: #fff;
 	line-height: normal;
 	cursor: pointer;
 	text-align: center;
 }
+
+.custom-shape-divider-top-1645801479 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+
+.custom-shape-divider-top-1645799574 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
 
 .site-btn:hover {
 	color: #fff;
@@ -164,6 +180,15 @@ Commom elements
 	border-radius: 60px;
 	animation: loader 0.8s linear infinite;
 	-webkit-animation: loader 0.8s linear infinite;
+}
+
+.custom-shape-divider-top-1645799574 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
 @keyframes loader {
@@ -212,12 +237,13 @@ Header section
 .header-section {
 	padding-left: 55px;
 	padding-right: 72px;
-	background: #08192d;
+	background: #850505;
+	box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px !important;
 }
 
 .unlockLogo {
 	font-size: x-large;
-	color: #FC0254;
+	color: #ffffff;
 }
 
 .unlockLogoText{
@@ -253,7 +279,7 @@ Header section
 }
 
 .header-right .user-panel .register {
-	color: #fc0254;
+	color: #DF1F2D;
 	margin-right: 0;
 }
 
@@ -275,14 +301,14 @@ Header section
 
 .main-menu li a {
 	display: block;
-	font-size: 16px;
+	font-size: 1.2rem;
 	color: #ffffff;
 	padding: 44px 10px;
 	margin-left: 60px;
 }
 
 .main-menu li a:hover {
-	color: #fc0254;
+	color: #DF1F2D;
 }
 
 .main-menu li:first-child a {
@@ -325,7 +351,7 @@ Header section
 }
 
 .main-menu .sub-menu li a:hover {
-	color: #fc0254;
+	color: #DF1F2D;
 }
 
 .slicknav_menu {
@@ -349,7 +375,7 @@ Hero section
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	background: #0a183d;
+	background: #000000;
 }
 
 .hs-item h2 {
@@ -363,7 +389,7 @@ Hero section
 }
 
 .hs-item h2 span {
-	color: #fc0254;
+	color: #DF1F2D;
 }
 
 .hs-item p {
@@ -451,7 +477,12 @@ Hero section
 }
 
 .hero-slider .owl-dots .owl-dot.active {
-	background: #fc0254;
+	background: #DF1F2D;
+}
+
+.sponsor {
+	margin-top: 10%;
+	margin-bottom: 2%;
 }
 
 /* ----------------
@@ -461,6 +492,59 @@ Intro section
 .intro-section p {
 	margin-bottom: 35px;
 	padding-top: 10px;
+}
+
+.intro-section .container{
+	margin-top: 5rem;
+}
+
+/* footer */
+
+footer {
+	margin-top: auto;
+	padding-top: 3rem;
+	background-color: #000000;
+}
+.footer-icon {
+	font-size: 2rem;
+	margin: 2rem;
+}
+footer a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #2B3784;
+	text-decoration: none;
+}
+footer a:active {
+	color: #2B3784;
+	text-decoration: none;
+}
+.footer-text {
+	font-family: "Roboto", sans-serif;
+	margin-top: 0.6rem;
+	letter-spacing: 0.8px;
+	word-spacing: 2px;
+	padding: 0.2rem 0.5rem;
+}
+.footer-text a {
+	font-weight: bold;
+}
+.footer-row {
+	height: 2rem;
+}
+
+@media (max-width: 400px) {
+	.footer-icon {
+		font-size: 1.5rem;
+		margin: 1rem;
+	}
 }
 
 /* /* ----------------
@@ -542,7 +626,7 @@ Responsive
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		color: #fc0254;
+		color: #DF1F2D;
 		background: transparent;
 	}
 	.slicknav_btn {
@@ -611,7 +695,7 @@ Responsive
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		color: #fc0254;
+		color: #DF1F2D;
 		background: transparent;
 	}
 	.slicknav_btn {
