@@ -22,6 +22,7 @@ urlpatterns = [
     path('ronduck/', admin.site.urls),
     path('',include('user.urls')),
     path("game/",include('game.urls')),
+    path("contactus", include('game.urls')),
     path('api/',include('api.urls')),
 ]
 

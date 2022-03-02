@@ -7,5 +7,7 @@ urlpatterns = [
     path('',views.index,name="index"),
     path('check_answer',views.check_answer,name="check_answer"),
     path("skip",views.skip_question,name="skip"),
-    path("end",views.game_end,name="end")
+    path("end",views.game_end,name="end"), 
+    path("leaderboard",views.index,name="leaderboard"),
+    path("rules",views.index,name="rules"),
 ]
