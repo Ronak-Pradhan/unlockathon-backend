@@ -57,7 +57,7 @@ def get_question(request):
 @permission_classes([IsAuthenticated])
 def leaderboard(request):
     context={}
-    leaderboard=get_user_model().objects.filter().order_by('-points')[:15]
+    leaderboard=get_user_model().objects.filter().order_by('-points')[:20]
     
     if leaderboard.count()>0:
         serializer=UserSerializer(leaderboard,many=True)
