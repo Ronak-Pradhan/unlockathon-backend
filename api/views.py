@@ -14,7 +14,7 @@ from .serializers import UserSerializer,QuestionSerializer
 
 from game.models import Question
 
-START_DATE = datetime.datetime(2022, 3, 2, 00,00,00,00,tzinfo=tz('Asia/Kolkata'))
+START_DATE = datetime.datetime(2022, 3, 3, 00,00,00,00,tzinfo=tz('Asia/Kolkata'))
 
 now = timezone.localtime()
 # Create your views here.
