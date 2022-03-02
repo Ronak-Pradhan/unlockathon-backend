@@ -4,7 +4,7 @@ from . import views
 app_name="game"
 
 urlpatterns = [
-    path('testing404',views.index,name="index"),
+    path('',views.index,name="index"),
     path('check_answer',views.check_answer,name="check_answer"),
     path("skip",views.skip_question,name="skip"),
     path("end",views.game_end,name="end")
