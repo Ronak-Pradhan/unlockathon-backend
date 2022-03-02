@@ -14,7 +14,7 @@ from .serializers import UserSerializer,QuestionSerializer
 
 from game.models import Question
 
-START_DATE = datetime.datetime(2022, 3, 3, 00,00,00,00,tzinfo=tz('Asia/Kolkata'))
+START_DATE = datetime.datetime(2022, 3, 2, 7,00,00,00,tzinfo=tz('Asia/Kolkata'))
 
 now = timezone.localtime()
 # Create your views here.
@@ -59,7 +59,7 @@ def leaderboard(request):
     context={}
     leaderboard=get_user_model().objects.filter().order_by('-points')
     
-    if leaderboard.count()>0:
+    if leaderboard.count()>0 and leaderboard.count()<=10:
         serializer=UserSerializer(leaderboard,many=True)
         context['status']='found'
         context['leaderboard']=serializer.data
