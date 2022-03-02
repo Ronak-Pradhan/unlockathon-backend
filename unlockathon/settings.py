@@ -37,11 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tinymce',
     'crispy_forms',
     'rest_framework',
     'user.apps.UserConfig',
     'game.apps.GameConfig',
     'api.apps.ApiConfig',
+
 ]
 
 MIDDLEWARE = [
