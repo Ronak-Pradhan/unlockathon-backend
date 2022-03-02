@@ -57,9 +57,9 @@ def get_question(request):
 @permission_classes([IsAuthenticated])
 def leaderboard(request):
     context={}
-    leaderboard=get_user_model().objects.filter().order_by('-points')
+    leaderboard=get_user_model().objects.filter().order_by('-points')[:15]
     
-    if leaderboard.count()>0 and leaderboard.count()<=10:
+    if leaderboard.count()>0:
         serializer=UserSerializer(leaderboard,many=True)
         context['status']='found'
         context['leaderboard']=serializer.data
